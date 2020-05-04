@@ -11,6 +11,9 @@ Professional resume and portfolio
 ### Print
 - Add dynamic form system to **(un)select sections and articles** to print
 
+### Cleanup
+- */css/*: Code rework, using variables and structure/styles css file structure
+
 ### Misc
 - Add **favicon.ico**
 - Replace **flag pictures**
