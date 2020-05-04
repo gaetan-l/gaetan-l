@@ -5,12 +5,12 @@ Professional resume and portfolio
 ## ToDo list
 
 ### Content
-- Add locations and companies
-- Add inks to useful documents (diplomas and certificates)
+- Add **locations** and **companies**
+- Add links to **useful documents** (diplomas and certificates)
 
 ### Print
-- Add dynamic form system to (un)select sections and articles to print
+- Add dynamic form system to **(un)select sections and articles** to print
 
 ### Misc
-- Add favicon.ico
-- Replace flag pictures
+- Add **favicon.ico**
+- Replace **flag pictures**
