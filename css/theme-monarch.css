@@ -1,0 +1,70 @@
+/* Style: color */
+nav {
+	background-color: #fdd100;
+}
+
+nav > ul >li > span,
+nav > ul > li > a > span,
+nav > ul > li::before,
+nav > ul > li:not(:first-child):not(:last-child):hover::after,
+nav > ul > li > a.optional:hover::before,
+nav > ul > li > a.optional:hover::after {
+	color: white;
+}
+
+aside > ul > li > a, h1, h2, p.subtitle,
+article > header > time, article > ul.tags > li {
+	color: grey;
+}
+
+article > header > p::before,
+article > header > time::before {
+	color: #fdd100;
+}
+
+p#pageTitle {
+	background-color: #fdd100 !important; /* !important for printing */
+	color: white !important; /* !important for printing */
+}
+
+section > h1 {
+	border-bottom: 1px solid lightgrey;
+}
+
+aside > ul > li {
+	border-right: 10px solid #fdd100;
+}
+
+/* Colored bullet list, source: https://www.lockedownseo.com/change-the-bullet-color-of-a-list-item-with-css/ */
+article > ul.cbList > li {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+ article > ul.cbList > li::before {
+  color: grey;
+  content: "\25aa";
+  font-size: 1.5em;
+  left: -0.75em;
+  position: absolute;
+  top: 0em;
+}
+/* ---------- */
+
+ul.list-column > li::before {
+	color: #fdd100;
+}
+
+footer {
+	color: grey;
+}
+
+article > p > a {
+	color: #fdd100;
+	border-bottom: 1px solid #fdd100;
+}
+
+article > p > a:hover {
+	font-style: italic;
+}

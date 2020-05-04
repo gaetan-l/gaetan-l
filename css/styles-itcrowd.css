@@ -1,0 +1,106 @@
+/* Style: menu, tag list, skill list */
+nav > ul > li,
+aside > ul > li,
+article > ul.tags > li,
+section#skills ul > li {
+	list-style: none;
+}
+
+article > ul.tags > li::before {
+	content: "#";
+}
+
+
+
+/* Style: decoration */
+nav {
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06),0 4px 5px 0 rgba(0,0,0,0.06),0 1px 10px 0 rgba(0,0,0,0.08);
+}
+
+nav > ul > li + li:nth-of-type(2)::before {
+	content: '>';
+}
+
+nav > ul > li + li::before {
+	content: '|';
+}
+
+nav > ul > li:not(:first-child):not(:last-child)::after {
+	content: '■';
+	color: transparent;
+}
+
+nav > ul > li > a.optional::before {
+	content: "[";
+	color: transparent;
+}
+
+nav > ul > li > a.optional::after {
+	content: "]";
+	color: transparent;
+}
+
+article > header > time:first-of-type::before {
+	content: '|';
+}
+
+@media (max-width:649px) {
+	article > header > time:first-of-type::before {
+		content: '>';
+	}
+}
+
+@keyframes cursor-blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+nav > ul > li:hover::after,
+nav > ul > li > a.optional:hover::before,
+nav > ul > li > a.optional:hover::after {
+	animation: cursor-blinker 1s linear infinite;
+}
+
+@keyframes border-blinker {
+	50% {
+		border-color: transparent;
+	}
+}
+
+aside > ul > li:hover {
+	animation: border-blinker 0.75s linear infinite;
+}
+
+article > header > p::before,
+article > header > time + time::before {
+	content: '–';
+}
+
+
+
+/* Skill lists */
+ul.list-column > li::before {
+	margin-right: 0.75em;
+}
+
+ul.list-column > li.no-stars::before {
+	content: '☆☆☆';
+	color: transparent;
+}
+
+ul.list-column > li.stars-0::before {
+	content: '☆☆☆';
+}
+
+ul.list-column > li.stars-1::before {
+	content: '★☆☆';
+}
+
+ul.list-column > li.stars-2::before {
+	content: '★★☆';
+}
+
+ul.list-column > li.stars-3::before {
+	content: '★★★';
+}

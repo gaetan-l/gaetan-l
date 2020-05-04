@@ -1,0 +1,33 @@
+section.print {
+  display:none;
+}
+
+@media print {
+  section.screen {
+    display: none;
+  }
+
+  section.print {
+    display: block;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  section:first-of-type {
+    padding-top: 0;
+  }
+
+  article { 
+  page-break-inside: avoid;
+  }
+
+  h1, h2, header {
+  	page-break-after: avoid;
+  }
+
+  nav, aside, footer {
+    display: none;
+  }
+}

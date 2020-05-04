@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gaetan</title>
+  <meta name="description" content="Professional resume">
+  <meta name="author" content="Gaetan L.">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/fonts-raleway.css">
+  <link rel="stylesheet" href="/css/structure-haflnav.css">
+  <link rel="stylesheet" href="/css/styles-itcrowd.css">
+  <link rel="stylesheet" href="/css/theme-monarch.css">
+  <link rel="stylesheet" href="/css/print.css">
+  <script src="/js/scroll.js"></script>
+  <script src="/js/onload.js" type="module"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li                                           ><span class="fullNav" data-i18n="general.name-short"></span></li>
+      <li><a href="/"                               ><span class="fullNav" data-i18n="nav-full.main">     </span><span class="shortNav" data-i18n="nav-short.main">   </span></a></li>
+      <li><a href="/nurse"   class="active"         ><span class="fullNav" data-i18n="nav-full.nurse">    </span><span class="shortNav" data-i18n="nav-short.nurse">  </span></a></li>
+      <li><a href="/it"                             ><span class="fullNav" data-i18n="nav-full.it">       </span><span class="shortNav" data-i18n="nav-short.it">     </span></a></li>
+      <li><a href="/project" class="optional"       ><span class="fullNav" data-i18n="nav-full.project">  </span><span class="shortNav" data-i18n="nav-short.project"></span></a></li>
+    </ul>
+    <img id="flag"/>
+  </nav>
+
+  <aside>
+    <ul>
+      <li><a href="#experience" onclick="smoothScroll('experience'); return false;" data-i18n="job.experience"></a></li>
+      <li><a href="#education"  onclick="smoothScroll('education');  return false;" data-i18n="job.education"></a></li>
+      <li><a href="#skills"     onclick="smoothScroll('skills');     return false;" data-i18n="job.skills"></a></li>
+      <li><a href="#social"     onclick="smoothScroll('social');     return false;" data-i18n="job.social"></a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section id="info" class="print">
+      <p id="pageTitle" data-i18n="general.name-full"></h1>
+      <article>
+        <header>
+          <h1 data-i18n="job-nurse.job-title"></h2>
+          <p data-i18n="job-nurse.job-subtitle"></p>
+        </header>
+        <p class="spaced">
+          <span data-i18n="job.dob"></span> |
+          <span data-i18n="job.place"></span> |
+          <span data-i18n="job.commute"></span>
+        </p>
+        <ul class="tags">
+          <li data-i18n="job-nurse.tag-icu"></li>
+          <li data-i18n="job-nurse.tag-nv"></li>
+          <li data-i18n="job-nurse.tag-tw"></li>
+          <li data-i18n="job-nurse.tag-relational"li></li>
+          <li data-i18n="job-nurse.tag-fr"></li>
+          <li data-i18n="job-nurse.tag-en"></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h1 data-i18n="job.experience"></h1>
+
+      <article>
+        <header>
+          <h1 data-i18n="job-nurse.job-2-title"></h1>
+          <time class="from" datetime="2020-03" data-i18n="job-nurse.job-2-from"></time>
+          <time class="to"data-i18n="job-nurse.job-2-to"></time>
+        </header>
+        <p data-i18n="job-nurse.job-2-1"></p>
+        <ul class="tags">
+          <li data-i18n="job-nurse.tag-icu"></li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+          <h1 data-i18n="job-nurse.job-1-title"></h1>
+          <time class="from" datetime="2017-09" data-i18n="job-nurse.job-1-from"></time>
+          <time class="to" data-i18n="job-nurse.job-1-to"></time>
+        </header>
+        <p data-i18n="job-nurse.job-1-1"></p>
+        <ul class="tags">
+          <li data-i18n="job-nurse.tag-nv"></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education">
+      <h1 data-i18n="job.education"></h1>
+
+      <article>
+        <header>
+          <h1 data-i18n="job-nurse.ed-1-title"></h1>
+          <time datetime="2020-09" data-i18n="job-nurse.ed-1-date"></time>
+        </header>
+        <p data-i18n="job-nurse.ed-1-1"></p>
+      </article>
+
+      <article>
+        <header>
+          <h1 data-i18n="job.ed-toeic-title"></h1>
+          <time datetime="2006-09" data-i18n="job.ed-toeic-date"></time>
+        </header>
+        <p  data-i18n="job.ed-toeic-1"></p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h1 data-i18n="job.skills"></h1>
+      <article>
+        <h1 data-i18n="job-nurse.tag-nursing"></h1>
+        <ul class="list-column">
+          <li class="stars-2" data-i18n="job-nurse.tag-icu"></li>
+          <li class="stars-1" data-i18n="job-nurse.tag-nv"></li>
+          <li class="stars-3" data-i18n="job.tag-tw"></li>
+          <li class="stars-2" data-i18n="job-nurse.tag-relational"></li>
+        </ul>
+      </article>
+      <article>
+        <h1 data-i18n="job.tag-lang"></h1>
+        <ul class="list-column">
+          <li class="stars-3" data-i18n="job.tag-en"></li>
+          <li class="stars-3" data-i18n="job.tag-fr"></li>
+          <li class="stars-1" data-i18n="job.tag-de"></li>
+          <li class="stars-1" data-i18n="job.tag-sp"></li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="social" class="screen">
+      <h1 data-i18n="job.social"></h1>
+
+      <article>
+        <table style="border: 0; text-align: center; table-layout: fixed; width: 100%;">
+          <tr>
+            <td syle="width: 100%"><a href="https://www.linkedin.com/in/gaetan-l"> <img src="/images/linkedin.svg"/ class="icon"></a></td>
+          </tr>
+          <tr>
+            <td data-i18n="job.social-linkedin"></td>
+          </tr>
+        </table>
+      </article>
+    </section>
+  </main>
+
+  <footer data-i18n="general.footer"></footer>
+</body>
+</html>

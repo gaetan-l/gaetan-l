@@ -1,0 +1,230 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Structure: general; */
+html, body {
+	height: 100%;
+}
+
+main {
+	display:block; /* Internet Explorer */
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 255;
+}
+
+nav > ul, main  {
+	max-width: 800px;
+	min-width: 400px;
+	margin: auto;
+}
+
+aside {
+	position: fixed;
+	width: 200px;
+	left: calc(((100% - 800px) / 2) - 200px - 2em);
+	text-align: right;
+}
+
+@media (max-width: 1200px) {
+  aside {
+    display: none;
+  }
+}
+
+
+
+/* Structure: anchors */
+/* Structure: anchors - compensation for fixed header */
+section {
+  padding-top: 4em;
+}
+
+section {
+	margin-bottom: -2.5em;
+}
+
+/* Structure: anchors - bottom padding for last anchor */
+@media (min-width: 1200px) {
+	section:last-of-type {
+		min-height: 100vh;
+	}
+}
+
+@media (max-width: 1199px) {
+	main {
+		min-height: 100%;
+		margin-bottom: -3.15em; /* 1.15 + 1 + 1; 1.15 is normalise.css' line-heit, thus de facto footer's height, and 1 is footer's padding */
+	}
+
+	section:last-of-type {
+		padding-bottom: 3.15em;
+	}
+}
+
+
+
+/* Structure: normal lists */
+article > ul:not(.tags) {
+	line-height: 1.5em;
+	margin-left: 2.5em;
+}
+
+/* Structure: inline article header, tag list and navigation list */
+article > header,
+article > ul.tags,
+nav > ul {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 649px) {
+	article > header {
+		display: block;
+	}
+}
+
+/* Structure: navigation list */
+@media (min-width: 800px) {
+	nav > ul > li > a > span.shortNav {
+		display: none;
+	}
+}
+
+@media (max-width: 799px) {
+	nav > ul > li > a > span.fullNav {
+		display: none;
+	}
+}
+
+/* Structure: icons */
+img.icon {
+	width: 48px;
+	height: 48px;
+}
+
+/* Structure: flag; */
+img#flag {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 1em;
+	padding: 1em;
+}
+
+
+
+/* Spacing: general elements (section, article) */
+main {
+	padding: 0 0.5em;
+}
+
+@media (min-width: 1200px) {
+	article {
+		text-align: justify;
+	}
+}
+
+article + article {
+	margin-top: 1.5em;
+}
+
+section > article:first-of-type {
+	margin-top: 0.25em;
+}
+
+article > header > p::before,
+article > header > time::before {
+	margin: 0 0.5em;
+}
+
+article > ul.tags {
+	margin-top: 0.25em;
+}
+
+article > p + p, article > p.spaced {
+	margin-top: 0.75em;
+}
+
+article > p.nospace {
+	margin-top: 0;
+}
+
+article > h2 {
+	margin-top: 0.75em;
+}
+
+aside {
+	margin-top: 4.5em;
+}
+
+aside > ul > li {
+	padding-right: 0.5em;
+}
+
+nav {
+	line-height: 3em;
+}
+
+aside {
+	line-height: 2.5em;
+}
+
+article > p {
+	line-height: 1.5em;
+}
+
+footer {
+	text-align: center;
+	padding: 3em 1em 1em 1em;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Spacing: inline elements (menu, "before" content, tags) */
+nav > ul > li:first-child,
+nav > ul > li + li::before {
+	margin-right: 0.5em;
+}
+
+article > ul.tags > li {
+	margin-right: 1em;
+}
+
+
+
+/* Column lists */
+ul.list-column {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+@media (max-width: 600px) {
+  ul.list-column {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
+}
+
+ul.list-column > li {
+	margin-bottom: 1em;
+}
