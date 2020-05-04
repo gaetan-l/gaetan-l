@@ -16,5 +16,5 @@ Professional resume and portfolio
 - Apply **template system**
 
 ### Misc
-- Add **favicon.ico**
+- ~~Add **favicon.ico**~~
 - Replace **flag pictures**
