@@ -19,6 +19,7 @@ Professional resume and portfolio
 ### Rework and cleanup
 - *css/*: **Code rework**, using variables and structure/styles css file structure
 - Apply **template system**
+- Change **social table to flexbox**
 
 ### Misc
 - ~~Add **favicon.ico**~~
