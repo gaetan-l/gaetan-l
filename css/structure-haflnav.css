@@ -79,13 +79,18 @@ article > ul:not(.tags) {
 	margin-left: 2.5em;
 }
 
-/* Structure: inline article header, tag list and navigation list */
-article > header,
+/* Structure: inline tag list and navigation list */
 article > ul.tags,
 nav > ul {
 	display: flex;
 	align-items: baseline;
 	flex-wrap: wrap;
+}
+
+/* Structure: inline job header */
+article > header > address,
+article > header > time {
+	display: inline;
 }
 
 @media only screen and (max-width: 649px) {

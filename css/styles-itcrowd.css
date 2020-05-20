@@ -77,6 +77,10 @@ article > header > time + time::before {
 	content: '–';
 }
 
+article > header > address + address::before {
+	content: ', ';
+}
+
 
 
 /* Skill lists */

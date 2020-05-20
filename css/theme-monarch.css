@@ -13,7 +13,8 @@ nav > ul > li > a.optional:hover::after {
 }
 
 aside > ul > li > a, h1, h2, p.subtitle,
-article > header > time, article > ul.tags > li {
+article > header > time, article > header > address, 
+article > ul.tags > li {
 	color: grey;
 }
 
@@ -49,6 +50,10 @@ article > ul.cbList > li {
   left: -0.75em;
   position: absolute;
   top: 0em;
+}
+
+address, time {
+  font-style: italic;
 }
 /* ---------- */
 
