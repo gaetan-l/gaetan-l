@@ -80,6 +80,7 @@ article > ul:not(.tags) {
 }
 
 /* Structure: inline tag list and navigation list */
+section#info > article > header,
 article > ul.tags,
 nav > ul {
 	display: flex;
@@ -232,4 +233,22 @@ ul.list-column {
 
 ul.list-column > li {
 	margin-bottom: 1em;
+}
+
+
+
+/* Social table */
+table.social-table {
+	border: 0;
+	text-align: center;
+	table-layout: fixed;
+	width: 100%;
+}
+
+table.social-table td {
+	width: 33%;
+}
+
+table.social-table tr.icon-row > td {
+	padding-top: 4em;
 }

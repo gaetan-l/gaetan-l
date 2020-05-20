@@ -30,4 +30,8 @@ section.print {
   nav, aside, footer {
     display: none;
   }
+
+  ul.list-column > li {
+    margin-bottom: 0;
+  }
 }
