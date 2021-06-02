@@ -24,5 +24,3 @@ Professional resume and portfolio
 ### Misc
 - ~~Add **favicon.ico**~~
 - Replace **flag pictures**
-
-Test 2
