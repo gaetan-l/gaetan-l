@@ -3,6 +3,12 @@ section.print {
 }
 
 @media print {
+  section {
+    padding-top: 0em;
+    margin-bottom: 0em;
+    margin-top: 1em;
+  }
+
   section.screen {
     display: none;
   }
